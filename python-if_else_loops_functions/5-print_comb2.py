@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# print number  00 to 99
 
 for number in range(0, 100):
     if number == 99:
