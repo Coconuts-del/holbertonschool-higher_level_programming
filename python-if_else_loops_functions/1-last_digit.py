@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+# print whether the number stored in the variable number is > 0 or < 0
 import random
 number = random.randint(-10000, 10000)
 digit = abs(number) % 10
