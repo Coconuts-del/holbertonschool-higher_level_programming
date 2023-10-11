@@ -21,5 +21,6 @@
   * [`6-max_integer.py`](./6-max_integer.py) -  find and return the max integer in a list of integers.
   * [`tests/6-max_integer.txt`](./tests/6-max_integer.txt) - Test file with `Unittest`.
 ## `License` :busts_in_silhouette:
-Author :
--Claudine Sillam < 6712@holbertonstudents:.com >
+## `Authors`
+* [**Claudine Sillam**](https://github.com/Coconuts-del)
+
