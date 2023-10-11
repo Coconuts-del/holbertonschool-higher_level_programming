@@ -7,7 +7,7 @@
   * [`tests/0-add_integer.txt`](./tests/0-add_integer.txt) - Test file with `Doctest`.
 * **01.Divide a matrix**
   * [`2-matrix_divided.py`](./2-matrix_divided.py) - divide all elements of a matrix. 
-  * [`tests/2-matrix_divided.txt`](./tests/2-matrix_divided.txt) - Test file with 
+  * [`tests/2-matrix_divided.txt`](./tests/2-matrix_divided.txt) - Test file with `Doctest`.
 * **02. Say my name**
   * [`3-say_my_name.py`](./3-say_my_name.py) – prints ` My name is <first name> <last name>`.
   * [`tests/3-say_my_name.txt`](./tests/3-say_my_name.txt) - Test file with `Doctest`.
@@ -20,4 +20,6 @@
 * **05. Max integer - Unittest**
   * [`6-max_integer.py`](./6-max_integer.py) -  find and return the max integer in a list of integers.
   * [`tests/6-max_integer.txt`](./tests/6-max_integer.txt) - Test file with `Unittest`.
-
+## `License` :busts_in_silhouette:
+Author :
+-Claudine Sillam < 6712@holbertonstudents:.com >
