@@ -1,0 +1,72 @@
+The ``0-add_integer`` module
+============================
+
+Using ``add_integer``
+-------------------
+
+Import .py module:
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Normal use
+----------
+Integers:
+    >>> add_integer(4, 10)
+    14
+
+    >>> add_integer(-14, 10)
+    -4
+
+Float:
+    >>> add_integer(4.600, 10.702)
+    14
+ 
+    >>> add_integer(-14.600, -10.702)
+    -24
+ 
+    >>> add_integer(14, 10.600)
+    24
+    
+
+One argument:
+    >>> add_integer(-10)
+    88
+    
+    >>> add_integer(10.999)
+    108
+
+
+Exceptions
+---------
+Float overflow:
+    >>> add_integer(1, float('-inf'))
+    Traceback (most recent call last):
+    ...
+    OverflowError: cannot convert float infinity to integer
+
+Float NaN:
+    >>> add_integer(1, float('NaN'))
+    Traceback (most recent call last):
+    ...
+    ValueError: cannot convert float NaN to integer
+
+No valid argument:
+    >>> add_integer("toto", 10)
+    Traceback (most recent call last):
+    ...
+    TypeError: a must be an integer
+
+    >>> add_integer(10, [45])
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
+
+Number of argument:
+    >>> add_integer()
+    Traceback (most recent call last):
+    ...
+    TypeError: add_integer() missing 1 required positional argument: 'a'
+
+    >>> add_integer(5, 10, 10)
+    Traceback (most recent call last):
+    ...
+    TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
