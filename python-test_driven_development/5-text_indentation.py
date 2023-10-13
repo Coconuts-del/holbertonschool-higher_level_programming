@@ -6,7 +6,7 @@
 
 
 def text_indentation(text):
-    """ validationn """
+    """ validation """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
