@@ -6,5 +6,5 @@
 
 
 def is_kind_of_class(obj, a_class):
-    """ obj is same class as a_class or same class of child class """
+    """ obj is same class as a_class orsame class of inherited a_class """
     return isinstance(obj, a_class)
