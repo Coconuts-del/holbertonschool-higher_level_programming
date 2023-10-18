@@ -33,6 +33,12 @@ string
     ...
     TypeError: age must be an integer
 
+float
+    >>> bg.integer_validator("age", "5.1223")
+    Traceback (most recent call last):
+    ...
+    TypeError: age must be an integer
+
 list
     >>> bg.integer_validator("age", [50])
     Traceback (most recent call last):
