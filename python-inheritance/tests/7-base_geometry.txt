@@ -51,6 +51,18 @@ Set
     ...
     TypeError: age must be an integer
 
+Boolean
+    >>> bg.integer_validator("age",True)
+    Traceback (most recent call last):
+    ...
+    TypeError: age must be an integer
+
+None
+    >>> bg.integer_validator("age",None)
+    Traceback (most recent call last):
+    ...
+    TypeError: age must be an integer
+
 One argument
     >>> bg.integer_validator(50)
     Traceback (most recent call last):
