@@ -31,25 +31,25 @@ string
     >>> bg.integer_validator("age", "50")
     Traceback (most recent call last):
     ...
-    TypeError: age must be integer
+    TypeError: age must be an integer
 
 list
     >>> bg.integer_validator("age", [50])
     Traceback (most recent call last):
     ...
-    TypeError: age must be integer
+    TypeError: age must be an integer
 
 Tuple
     >>> bg.integer_validator("age", (50,))
     Traceback (most recent call last):
     ...
-    TypeError: age must be integer
+    TypeError: age must be an integer
 
 Set
     >>> bg.integer_validator("age", (50, "titi"))
     Traceback (most recent call last):
     ...
-    TypeError: age must be integer
+    TypeError: age must be an integer
 
 One argument
     >>> bg.integer_validator(50)
