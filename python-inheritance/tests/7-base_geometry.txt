@@ -1,0 +1,64 @@
+===============================
+doctest for 7-base_geometry.txt
+===============================
+
+Importing .py module:
+>>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+>>> bg = BaseGeometry()
+
+test empty
+    >>> bg.area()
+    Traceback (most recent call last):
+    ...
+    Exception: area() is not implemented
+
+basic use
+    >>> bg.integer_validator("age", 15)
+
+Zero value
+    >>> bg.integer_validator("age", 0)
+    Traceback (most recent call last):
+    ...
+    ValueError: age must be greater than 0
+
+Negative value
+    >>> bg.integer_validator("age", -30)
+    Traceback (most recent call last):
+    ...
+    ValueError: age must be greater than 0
+
+string
+    >>> bg.integer_validator("age", "50")
+    Traceback (most recent call last):
+    ...
+    TypeError: age must be integer
+
+list
+    >>> bg.integer_validator("age", [50])
+    Traceback (most recent call last):
+    ...
+    TypeError: age must be integer
+
+Tuple
+    >>> bg.integer_validator("age", (50,))
+    Traceback (most recent call last):
+    ...
+    TypeError: age must be integer
+
+Set
+    >>> bg.integer_validator("age", (50, "titi"))
+    Traceback (most recent call last):
+    ...
+    TypeError: age must be integer
+
+One argument
+    >>> bg.integer_validator(50)
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+No arguments
+    >>> bg.integer_validator()
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
