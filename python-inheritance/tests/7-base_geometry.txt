@@ -22,7 +22,7 @@ Zero value
     ValueError: age must be greater than 0
 
 string
-    >>> bg.integer_validator("age", "titi")
+    >>> bg.integer_validator("name", "titi")
     Traceback (most recent call last):
     ...
     TypeError: age must be an integer
@@ -39,7 +39,7 @@ Tuple
     ...
     TypeError: age must be an integer
 
-Set
+Tuple
     >>> bg.integer_validator("age", (50, 20))
     Traceback (most recent call last):
     ...
