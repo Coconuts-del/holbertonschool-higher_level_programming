@@ -22,7 +22,7 @@ Zero value
     ValueError: age must be greater than 0
 
 string
-    >>> bg.integer_validator("age", "50")
+    >>> bg.integer_validator("age", "titi")
     Traceback (most recent call last):
     ...
     TypeError: age must be an integer
