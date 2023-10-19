@@ -80,3 +80,11 @@ No arguments
     Traceback (most recent call last):
     ...
     TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+Unintented use
+    >>> bg.integer_validator("" ,15)
+    >>> bg.integer_validator("" ,"Jean")
+    Traceback (most recent call last):
+    ...
+    TypeError:  must be an integer
+
