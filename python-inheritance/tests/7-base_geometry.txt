@@ -25,7 +25,7 @@ string
     >>> bg.integer_validator("name", "titi")
     Traceback (most recent call last):
     ...
-    TypeError: age must be an integer
+    TypeError: name must be an integer
 
 list
     >>> bg.integer_validator("age", [50])
