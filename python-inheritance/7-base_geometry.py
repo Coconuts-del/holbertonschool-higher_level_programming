@@ -3,9 +3,9 @@
 
 
 class BaseGeometry:
-    """ class BaseGeometry with public instance method """
+    """ class named BaseGeometry with public instance method """
     def area(self):
-        """ raise an exception is the class is empty """
+        """ raise an exception if the class is empty """
         raise Exception("area() is not implemented")
 
     def integer_validator(self, name, value):
