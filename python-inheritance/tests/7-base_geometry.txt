@@ -50,6 +50,12 @@ Tuple
     ...
     TypeError: age must be an integer
 
+Set
+    >>> bg.integer_validator("age", {50, 20})
+    Traceback (most recent call last):
+    ...
+    TypeError: age must be an integer
+
 Boolean
     >>> bg.integer_validator("age",True)
     Traceback (most recent call last):
