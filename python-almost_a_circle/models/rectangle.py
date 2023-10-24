@@ -76,13 +76,14 @@ class Rectangle(Base):
 
     def display(self):
         """ print stdout rectangle  with character # """
-        char = "#"
+        """ print at the ordered """
+        print("{}".format("\n" * self.__y), end="")
         for i in range(self.__height):
+            """ print at the abscissa """
+            print("{}".format(" " * self.__x), end="")
             for j in range(self.__width):
                 print("#", end="")
-            if i < self.__height - 1:
-                print()
-        print()
+            print()
 
     def __str__(self):
         """ overriding __str__ method to return
