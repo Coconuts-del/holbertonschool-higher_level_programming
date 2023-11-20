@@ -1,0 +1,5 @@
+--  lists all records of the table second_table of the database hbtn_0c_0 in
+--  your MySQL server. Result ordered by score display score and name.
+-- The database name will be passed as an argument of the mysql command
+SELECT score,name FROM second_table
+ORDER BY SCORE DESC;
