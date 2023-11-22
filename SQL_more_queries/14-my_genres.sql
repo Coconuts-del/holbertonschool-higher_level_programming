@@ -2,7 +2,8 @@
 --  using only 1 select and display tv.genres.name
 --  sorted in ascending order by the genre name  
 --  database name pass as an argument of mysql command 
-SELECT tv_genres.name FROM tv_genres 
+SELECT tv_genres.name 
+FROM tv_genres 
   JOIN tv_show_genres 
     ON tv_genres.id = tv_show_genres.genre_id
   JOIN tv_shows 
