@@ -12,7 +12,8 @@ import MySQLdb
 if __name__ != "__main__":
     sys.exit(0)
 if len(sys.argv) != 5:
-    print("Usage : python script.py <username> <password> <database> <state>")
+    print("Usage : python script.py <username> <password> <database>"
+          " <state name searched>")
     sys.exit(1)
 
 """ connection to the database """
