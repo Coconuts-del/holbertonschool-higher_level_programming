@@ -5,7 +5,7 @@ bridging the gap between Python and SQL using
     the module "SQLAlchemy"  as an introduction to Object Relational Mapping
 
 ### Provided files
-   * [`0-select_states.sql`](./provided/0-select_states.sql)]:
+   * [`0-select_states.sql`](./provided/0-select_states.sql)
 ### More info
 ####Install MySQLdb module version 2.0.x
 For installing MySQLdb, you need to have MySQL installed.
