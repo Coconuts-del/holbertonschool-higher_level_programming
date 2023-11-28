@@ -1,8 +1,9 @@
 #!/usr/bin/python3
 """
-    script taking 3 arguments mysql username mysql password database name
+    script taking 3 arguments mysql username, mysql password, database name
     lists all states from the database hbtn_0e_0_usa sorted by states_id asc
-    using module MySQLdbconnect and server running on localhost at port 3306
+    using module MySQLdb
+    connect to MySQL server running on localhost at port 3306
     code dont be executed when imported
 """
 import sys
@@ -24,9 +25,9 @@ c = db.cursor()
 c.execute("SELECT * FROM states ORDER BY id")
 
 """ retrieve all the rows of the table states"""
-states = c.fetchall()
-for state in states:
-    print(state)
+lines = c.fetchall()
+for line in lines:
+    print(line)
 
 """  close the cursor and the connection """
 c.close()
