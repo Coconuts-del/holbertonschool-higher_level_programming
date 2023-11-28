@@ -16,7 +16,11 @@ if __name__ == "__main__":
     """ creating session to interact with database """
     Session = sessionmaker(bind=engine)
     session = Session()
-    """ display the first state"""
-    for state in session.query(State).order_by(State.id)[0:1]:
+    """ retrieve the first state"""
+    state = session.query(State).order_by(State.id).first()
+    """ display the result """
+    if state:
         print("{}: {}".format(state.id, state.name))
+    else:
+        print("Nothing")
     session.close()
