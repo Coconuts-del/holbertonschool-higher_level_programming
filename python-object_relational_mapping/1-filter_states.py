@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
     """ create a cursor to execute sql command  """
     c = db.cursor()
-    c.execute("SELECT * FROM states WHERE name LIKE 'N%'"
+    c.execute("SELECT * FROM states WHERE name LIKE BINARY 'N%'"
               "ORDER BY id")
 
     """ retrieve all the rows of the table states"""
